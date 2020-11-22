@@ -13,7 +13,6 @@ class TaskCell: UITableViewCell
 
     @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var taskNameLabel: UILabel!
-    
     @IBOutlet weak var taskCompleteSwitch: UISwitch!
     @IBOutlet weak var dueDateLabel: UILabel!
     

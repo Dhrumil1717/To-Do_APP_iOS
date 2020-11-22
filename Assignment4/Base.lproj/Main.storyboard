@@ -34,12 +34,17 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Has Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwM-Zh-zUq">
-                                                    <rect key="frame" x="29" y="46" width="107" height="15"/>
+                                                    <rect key="frame" x="29" y="46" width="209" height="15"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.027450980390000001" green="0.050980392159999999" blue="0.34901960780000002" alpha="0.95071703770000004" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mUd-Pw-MBM">
+                                                    <rect key="frame" x="278" y="17" width="51" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="onTintColor" red="0.0039215686269999999" green="0.7725490196" blue="0.76862745099999996" alpha="0.95071703770000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </switch>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvn-bj-8zf">
                                                     <rect key="frame" x="352" y="16" width="27" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -49,11 +54,6 @@
                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="medium"/>
                                                     </state>
                                                 </button>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mUd-Pw-MBM">
-                                                    <rect key="frame" x="278" y="17" width="51" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="onTintColor" red="0.0039215686269999999" green="0.7725490196" blue="0.76862745099999996" alpha="0.95071703770000004" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </switch>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.83529411764705885" blue="0.80392156862745101" alpha="0.95071703770000004" colorSpace="custom" customColorSpace="sRGB"/>
@@ -85,7 +85,7 @@
                     <navigationItem key="navigationItem" title="TO-DO List" id="5D1-ZC-xnO" colorLabel="IBBuiltInLabel-Green">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="BoO-9y-1qm">
                             <connections>
-                                <segue destination="oPG-pn-TUP" kind="show" id="wPg-Nh-W9e"/>
+                                <segue destination="oPG-pn-TUP" kind="show" identifier="segueAddTask" id="wPg-Nh-W9e"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -187,6 +187,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.83529411760000005" blue="0.80392156859999997" alpha="0.95071703770000004" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="onTintColor" red="0.0039215686274509803" green="0.77254901960784317" blue="0.76862745098039209" alpha="0.95071703770000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dueDateSwitchAction:" destination="oPG-pn-TUP" eventType="valueChanged" id="kGE-f8-g2z"/>
+                                </connections>
                             </switch>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="PUX-kF-wqa">
                                 <rect key="frame" x="20" y="553" width="374" height="162"/>
@@ -231,12 +234,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ul3-ZI-qeX"/>
                     <connections>
+                        <outlet property="datePicker" destination="PUX-kF-wqa" id="JPY-Ja-EaQ"/>
+                        <outlet property="dueDateSwitch" destination="hEW-Mk-5y1" id="Htc-76-eay"/>
                         <outlet property="taskNameOutlet" destination="OpF-TO-yaR" id="YGU-r4-Afv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bov-5p-pnI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889.8550724637682" y="117.85714285714285"/>
+            <point key="canvasLocation" x="2006" y="109"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7n5-Um-1cr">
