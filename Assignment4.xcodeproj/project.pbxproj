@@ -15,6 +15,7 @@
 		BF9D18AC255CD90700003871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9D18AA255CD90700003871 /* LaunchScreen.storyboard */; };
 		BF9D18B4255E4F4000003871 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D18B3255E4F4000003871 /* TaskCell.swift */; };
 		BF9D18B8255E5D1700003871 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D18B7255E5D1700003871 /* AddTaskViewController.swift */; };
+		BF9D1906256AD03800003871 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D1905256AD03800003871 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BF9D18AD255CD90700003871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9D18B3255E4F4000003871 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		BF9D18B7255E5D1700003871 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		BF9D1905256AD03800003871 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BF9D18AA255CD90700003871 /* LaunchScreen.storyboard */,
 				BF9D18AD255CD90700003871 /* Info.plist */,
 				BF9D18B7255E5D1700003871 /* AddTaskViewController.swift */,
+				BF9D1905256AD03800003871 /* Task.swift */,
 			);
 			path = Assignment4;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				BF9D18A4255CD90500003871 /* ViewController.swift in Sources */,
 				BF9D18A0255CD90500003871 /* AppDelegate.swift in Sources */,
 				BF9D18A2255CD90500003871 /* SceneDelegate.swift in Sources */,
+				BF9D1906256AD03800003871 /* Task.swift in Sources */,
 				BF9D18B8255E5D1700003871 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
