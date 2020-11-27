@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" rowHeight="65" id="ANm-47-goK" customClass="TaskCell" customModule="Assignment4" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" rowHeight="65" id="ANm-47-goK" customClass="TaskCell" customModule="Assignment4" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ANm-47-goK" id="d9x-z1-NvM">
@@ -249,7 +249,7 @@
                         <outlet property="datePicker" destination="PUX-kF-wqa" id="JPY-Ja-EaQ"/>
                         <outlet property="descriptionOutlet" destination="Ej4-2S-3XQ" id="F5z-l1-bwm"/>
                         <outlet property="dueDateSwitch" destination="hEW-Mk-5y1" id="Htc-76-eay"/>
-                        <outlet property="isCompletedOutlet" destination="wCO-Cz-rwA" id="NcG-S9-qJy"/>
+                        <outlet property="isCompletedSwitch" destination="wCO-Cz-rwA" id="NcG-S9-qJy"/>
                         <outlet property="taskNameOutlet" destination="OpF-TO-yaR" id="YGU-r4-Afv"/>
                     </connections>
                 </viewController>

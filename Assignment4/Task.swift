@@ -16,8 +16,10 @@ class Task                  //creating a class and adding one parameter to make 
     var description = ""
     var dueDate = true
     var index = 0
+    var key = ""
+   
     
-    convenience init (name : String, date : String, description: String, checked : Bool, dueDate : Bool, index : Int)
+    convenience init (name : String, date : String, description: String, checked : Bool, dueDate : Bool, index : Int, key : String)
     {
         
         self.init()
@@ -27,12 +29,13 @@ class Task                  //creating a class and adding one parameter to make 
         self.checked = checked
         self.dueDate = dueDate
         self.index=index
-        
+        self.key=key
     }
     
 }
 
-enum TaskAction {
+enum TaskAction
+{
     case Add
     case Edit
 }
