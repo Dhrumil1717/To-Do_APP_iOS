@@ -123,7 +123,8 @@ class AddTaskViewController: UIViewController, UITextViewDelegate, UITextFieldDe
         {
             descriptionOutlet.isHidden = false
             dueDateSwitch.isHidden=false
-            isCompletedSwitch.isHidden=false}
+            isCompletedSwitch.isHidden=false
+        }
     }
     func textViewDidEndEditing(_ textView: UITextView)
     {

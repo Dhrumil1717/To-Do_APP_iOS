@@ -63,6 +63,7 @@
                                             <outlet property="editButton" destination="Pvn-bj-8zf" id="Ueq-Nw-XPP"/>
                                             <outlet property="taskCompleteSwitch" destination="mUd-Pw-MBM" id="d99-QH-h9m"/>
                                             <outlet property="taskNameLabel" destination="i1b-hA-rh5" id="0vO-TK-TvP"/>
+                                            <outletCollection property="gestureRecognizers" destination="UCq-vh-lGJ" appends="YES" id="ynU-JG-nXl"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -94,6 +95,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="UCq-vh-lGJ"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="117.85714285714285"/>
         </scene>
@@ -255,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bov-5p-pnI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2006" y="109"/>
+            <point key="canvasLocation" x="2012" y="118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7n5-Um-1cr">
